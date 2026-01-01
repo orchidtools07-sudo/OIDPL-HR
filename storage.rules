@@ -1,0 +1,15 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow anyone to read profile pictures
+    match /profilePictures/{employeeId} {
+      allow read: if true;
+      allow write: if true; // Allow uploads for now
+    }
+    
+    // Block everything else
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

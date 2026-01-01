@@ -1,0 +1,11 @@
+# Ignore files to reduce build size
+node_modules/**/*.md
+node_modules/**/*.map
+node_modules/**/*.ts
+node_modules/**/LICENSE
+node_modules/**/CHANGELOG.md
+node_modules/**/README.md
+.expo/
+.vscode/
+.git/
+*.log

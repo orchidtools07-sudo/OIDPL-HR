@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIDPL HR App - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #006dc0 0%, #004A8D 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: #006dc0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .version {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .download-btn {
+            background: #006dc0;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .download-btn:hover {
+            background: #004A8D;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 109, 192, 0.3);
+        }
+        .info {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .info-item {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .info-item strong {
+            color: #333;
+        }
+        .instructions {
+            text-align: left;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .instructions ol {
+            margin-left: 20px;
+        }
+        .instructions li {
+            margin: 8px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #f7cf49;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 13px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏢</div>
+        <h1>OIDPL HR App</h1>
+        <p class="version">Version 1.0.0 | Build 1</p>
+        
+        <a href="UPLOAD_APK_HERE" class="download-btn" download="oidpl-hr-v1.0.0.apk">
+            📥 Download APK (72 MB)
+        </a>
+        
+        <div class="info">
+            <div class="info-item"><strong>Package:</strong> com.orchiddeveloper.oidplhr</div>
+            <div class="info-item"><strong>Minimum Android:</strong> 6.0+</div>
+            <div class="info-item"><strong>Updated:</strong> December 23, 2025</div>
+        </div>
+        
+        <div class="warning">
+            ⚠️ <strong>Important:</strong> You may need to enable "Install from Unknown Sources" in your device settings.
+        </div>
+        
+        <div class="instructions">
+            <strong>Installation Steps:</strong>
+            <ol>
+                <li>Click the Download button above</li>
+                <li>Go to Settings → Security → Enable "Unknown Sources"</li>
+                <li>Open the downloaded APK file</li>
+                <li>Tap "Install"</li>
+                <li>Login with your mobile number and password</li>
+            </ol>
+        </div>
+        
+        <div class="instructions" style="margin-top: 30px;">
+            <strong>Login Credentials:</strong><br>
+            <strong>Admin:</strong> admin@oidpl.com / 123456<br>
+            <strong>Employee:</strong> Your mobile number / 123456
+        </div>
+    </div>
+</body>
+</html>

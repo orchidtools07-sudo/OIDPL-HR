@@ -1,0 +1,37 @@
+{
+  "rules": {
+    "employees": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["email", "mobile", "code"]
+    },
+    "locations": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["employeeId", "timestamp"]
+    },
+    "locationHistory": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["timestamp"]
+    },
+    "leaves": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["employeeId", "status"]
+    },
+    "leaveBalances": {
+      ".read": true,
+      ".write": true
+    },
+    "notifications": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["recipientId", "type", "status", "timestamp"]
+    },
+    "salarySlips": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

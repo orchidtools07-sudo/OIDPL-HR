@@ -1,29 +1,72 @@
 {
   "expo": {
     "name": "OIDPL-HR-App",
-    "slug": "OIDPL-HR-App",
+    "slug": "oidpl-hr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"]
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.orchiddeveloper.oidplhr",
+      "enableProguardInReleaseBuilds": true,
+      "enableShrinkResourcesInReleaseBuilds": true,
+      "jsEngine": "hermes",
+      "enableDangerousExperimentalLeanBuilds": true,
+      "enableHermes": true,
+      "splits": {
+        "abi": true,
+        "density": false
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "NOTIFICATIONS"
+      ],
+      "useNextNotificationsApi": true
     },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#006dc0",
+      "androidMode": "default",
+      "androidCollapsedTitle": "{{unread_count}} new notifications"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": false,
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7724f4d4-5859-419a-a4ea-779889289626"
+      }
+    },
+    "owner": "orchid-developer"
   }
 }
